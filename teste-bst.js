@@ -22,7 +22,7 @@ arvore.inOrderTraversal(n => console.log(n.data))
 
 let vet = []
 arvore.inOrderTraversal(n => vet.push(n.data))
-console.log(vet)
+console.log('Em-ordem', vet)
 
 vet = []
 arvore.preOrderTraversal(n => vet.push(n.data))
@@ -31,3 +31,8 @@ console.log('Pré-ordem', vet)
 vet = []
 arvore.postOrderTraversal(n => vet.push(n.data))
 console.log('Pós-ordem', vet)
+
+console.log('Mínimo: ', arvore.min())
+
+arvore.insert(5)
+console.log('Mínimo: ', arvore.min())
