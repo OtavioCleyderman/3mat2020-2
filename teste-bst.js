@@ -80,3 +80,8 @@ arvore.remove(31) // Grau 2 (raiz!!)
 vet = []
 arvore.inOrderTraversal(n => vet.push(n.data))
 console.log('Em-ordem', vet)
+
+arvore.remove(12) // Grau 2
+vet = []
+arvore.inOrderTraversal(n => vet.push(n.data))
+console.log('Em-ordem', vet)
