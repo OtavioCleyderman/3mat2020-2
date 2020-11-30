@@ -76,10 +76,18 @@ vet = []
 arvore.inOrderTraversal(n => vet.push(n.data))
 console.log('Em-ordem', vet)
 
+vet = []
+arvore.preOrderTraversal(n => vet.push(n.data))
+console.log('Pré-ordem antes da exclusão da raiz', vet)
+
 arvore.remove(31) // Grau 2 (raiz!!)
 vet = []
 arvore.inOrderTraversal(n => vet.push(n.data))
 console.log('Em-ordem', vet)
+
+vet = []
+arvore.preOrderTraversal(n => vet.push(n.data))
+console.log('Pré-ordem após exclusão da raiz', vet)
 
 arvore.remove(12) // Grau 2
 vet = []
